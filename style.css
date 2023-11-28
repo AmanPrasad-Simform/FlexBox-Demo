@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    word-wrap: break-word;
+}
+body {
+    box-sizing: border-box;
+}
+.nav-link:hover {
+    color: #dc3545;
+}
+.icon {
+    width: 30px;
+}
+.navbar {
+    background-color: #212529;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    z-index: 1;
+}
+.text-danger {
+    color: #dc3545;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar-brand {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-toggler {
+    display: none;
+    width: fit-content;
+}
+.navbar-toggler-icon img,
+.card-body img {
+    width: 30px;
+    filter: brightness(0) invert(1);
+}
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar-nav li {
+    font-weight: 900;
+    font-size: 18px;
+}
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+#home {
+    margin-top: 65px;
+}
+.img-container {
+    position: relative;
+}
+.home-container {
+    width: 100%;
+    background-color: black;
+}
+.img-container {
+    max-height: 500px;
+    min-height: 400px;
+}
+.caption-container h1 {
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(50%, 45%);
+    font-size: 2.5rem;
+}
+.open-code {
+    text-align: center;
+    display: flex;
+}
+.close-code {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+#services,
+#about,
+#team {
+    padding: 5rem 15rem;
+}
+.service-header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+.service-header h2 {
+    padding: 2rem;
+    font-size: 2rem;
+}
+.service-header p {
+    padding: 1rem 0 4rem 0;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+.card-container {
+    display: flex;
+}
+.card {
+    width: 90%;
+    background-color: #212529;
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    border-radius: 1rem;
+}
+.card-title {
+    font-size: 1.75rem;
+    font-family: monospace;
+    color: white;
+    line-height: 2rem;
+}
+.card-description {
+    font-size: 1.1rem;
+    font-family: monospace;
+    color: white;
+    padding: 2rem 1rem;
+    line-height: 2rem;
+}
+.card-btn {
+    width: 120px;
+    height: 45px;
+    background-color: #dc3545;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.about-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.about-img {
+    width: 40%;
+}
+.img-fluid {
+    max-width: 100%;
+}
+.about-text {
+    width: 55%;
+}
+.about-text h2 {
+    font-size: 2rem;
+}
+.about-text p {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+.team-header {
+    text-align: center;
+}
+.team-title {
+    font-size: 2.5rem;
+}
+.blockquote-footer::before {
+    content: "— ";
+}
+.blockquote p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #212529;
+}
+.blockquote footer {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #6c757d;
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+}
+.team-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-width: 25%;
+    max-width: 45%;
+    margin: 1rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.team-card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.team-img-container > img {
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.team-img-container {
+    display: flex;
+    justify-content: center;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+}
+.team-name {
+    font-size: 1.75rem;
+    text-align: center;
+}
+.team-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team-description-container .card-text {
+    text-align: center;
+    padding: 0.75rem 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.socials img,
+.contact-handler img {
+    cursor: pointer;
+    width: 20px;
+}
+.contact-container {
+    background-color: #212529;
+    color: white;
+}
+.contact-handler > img,
+.x {
+    filter: brightness(0) invert(1);
+}
+.contact-card {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    padding: 5rem 0 3rem 0;
+}
+.contact-social {
+    width: 40%;
+}
+.contact-text {
+    width: 60%;
+}
+.contact-social-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+}
+.contact-text-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+}
+.text-danger {
+    margin: 0 5px;
+}
+.contact-text h2 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+.contact-social p,
+.contact-text p {
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+.img-container img {
+    max-width: 500px;
+}
+/* Media query for responsiveness */
+@media screen and (max-width: 1500px) {
+    #services,
+    #about,
+    #team {
+        padding: 5rem 10rem;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-row {
+        display: block;
+        width: 100%;
+    }
+    .about-img {
+        width: auto;
+    }
+    .about-text {
+        width: auto;
+    }
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-social-inner {
+        margin: revert;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #services,
+    #about,
+    #team {
+        padding: 5rem;
+    }
+}
+@media screen and (max-width: 840px) {
+    .team-card {
+        min-width: 320px;
+    }
+    .caption-container h1 {
+        top: 10%;
+    }
+    .contact-card {
+        flex-wrap: wrap;
+    }
+    .contact-social {
+        width: 100%;
+    }
+    .contact-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 712px) {
+    .navbar-container {
+        display: flex;
+        position: relative;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        color: white;
+        z-index: 1;
+        text-align: center;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+    .navbar-toggler:hover + .navbar-collapse,
+    .navbar-collapse:hover {
+        display: block;
+        background-color: #212529;
+        margin-bottom: auto;
+    }
+    .caption-container h1 {
+        font-size: 2rem;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #services,
+    #about,
+    #team {
+        padding: 4rem 2rem;
+    }
+    .about-text p {
+        font-size: 1.1rem;
+    }
+    .about-text h2 {
+        padding: 2rem 0 0 0;
+    }
+    .team-card {
+        min-width: 320px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .home-container {
+        width: 0;
+    }
+    .img-container {
+        position: relative;
+    }
+    .caption-container h1 {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 10%;
+        right: 45%;
+    }
+    .img-container img {
+        width: 100vw;
+        height: 400px;
+    }
+}
