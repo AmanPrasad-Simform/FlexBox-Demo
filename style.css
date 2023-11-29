@@ -25,6 +25,7 @@ body {
 }
 .text-danger {
     color: #dc3545;
+    margin: 0 5px;
 }
 .navbar-container {
     display: flex;
@@ -266,8 +267,9 @@ a {
     color: white;
 }
 .contact-handler > img,
-.x {
+.code-img {
     filter: brightness(0) invert(1);
+    width: 40px;
 }
 .contact-card {
     display: flex;
@@ -295,9 +297,6 @@ a {
     justify-content: center;
     height: 100%;
     margin: auto;
-}
-.text-danger {
-    margin: 0 5px;
 }
 .contact-text h2 {
     font-size: 1.75rem;
